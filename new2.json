@@ -1,4 +1,13 @@
-Koltsova Mariya 31 y.o.
-have a 1 dog
-wanna be rich
-
+{
+"Koltsova Mariya":"name"
+"31":"age" 
+ "1":"dog"
+"wanna be":"rich"
+}
+{
+  "film":"Lock, Stock and Two Smoking Barrels"
+  "serial":"Game of Trone"
+  "food":"lasnia"
+  "season":"summer"
+  "country":"Peru"
+}
