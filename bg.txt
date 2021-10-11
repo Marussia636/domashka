@@ -1,0 +1,13 @@
+1) Summary
+2) Project
+3) Component
+4) Version
+5) Severity
+6) Priority
+7) Status
+8) Author
+9) Environment
+10) Steps to reproduce
+11) Result
+12) Expected result
+13) Attachment
