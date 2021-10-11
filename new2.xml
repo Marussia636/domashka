@@ -1,10 +1,11 @@
-<Employee name="Mariya Koltsova">
-<Age>31</Age>
-<Dog>1</Dog>
-<wonna>be_rich</wonna>
-
-  <film>"Lock, Stock and Two Smoking Barrels"</film>
-  <serial>"Game of Trone"</serial>
-  <food>"lasnia"</food>
-  <season>"summer"</season>
-  <country>"Peru"</country>
+<Employee>
+    <name>Mariya_Koltsova></name>
+    <Age>31</Age>
+    <Dog>1</Dog>
+    <wonna>be_rich</wonna>
+    <film>Lock_Stock_and_Two_Smoking_Barrels</film>
+    <serial>Games_of_Trone</serial>
+    <food>lasnia</food>
+    <season>summer</season>
+    <country>Peru</country>
+</Employee>
