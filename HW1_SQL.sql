@@ -23,7 +23,7 @@ select name, email, created_on from students;
 select * from students where password = '12333';
 
 --Вывести пользователей которые были созданы 2021-03-26 00:00:00
-select * from students where created_on = 2021-03-26 00:00:00;
+select * from students where created_on = '2021-03-26 00:00:00';
 
 --Вывести пользователей где в имени есть слово Анна
 select * from students where name like '%Анна%';
@@ -35,16 +35,16 @@ select * from students where name like '%8';
 select * from students where name like '%a%';
 
 --Вывести пользователей которые были созданы 2021-07-12 00:00:00
-select * from students where created_on = 2021-07-12 00:00:00;
+select * from students where created_on = '2021-07-12 00:00:00';
 
 --Вывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313
-select * from students where created_on = 2021-07-12 00:00:00 and password = '1m313';
+select * from students where created_on = '2021-07-12 00:00:00' and password = '1m313';
 
 --Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
-select * from students where created_on = 2021-07-12 00:00:00 and name like '%Andrey%';
+select * from students where created_on = '2021-07-12 00:00:00' and name like '%Andrey%';
 
 --Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
-select * from students where created_on = 2021-07-12 00:00:00 and name like '%8%';
+select * from students where created_on = '2021-07-12 00:00:00' and name like '%8%';
 
 --Вывести пользователя у которых id равен 10
 select * from students where id = 10;
@@ -77,7 +77,7 @@ select * from students where id between 80 and 90;
 select * from students where password in ('12333', '1m313', '123313');
 
 --Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00
-select * from students where created_on in (2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00);
+select * from students where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 
 --Вывести минимальный id
 select min(id) from students s; 
