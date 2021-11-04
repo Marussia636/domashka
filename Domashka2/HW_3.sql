@@ -1,79 +1,79 @@
--- 1. Âûâåñòè âñåõ ðàáîòíèêîâ ÷üè çàðïëàòû åñòü â áàçå, âìåñòå ñ çàðïëàòàìè.
+-- 1. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµÑ… Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ¾Ð² Ñ‡ÑŒÐ¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ ÐµÑÑ‚ÑŒ Ð² Ð±Ð°Ð·Ðµ, Ð²Ð¼ÐµÑÑ‚Ðµ Ñ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°Ð¼Ð¸.
 select e.employee_name, monthly_salary
 from employee_salary es 
 join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
 
---2. Âûâåñòè âñåõ ðàáîòíèêîâ ó êîòîðûõ ÇÏ ìåíüøå 2000.
+-- 2. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµÑ… Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ¾Ð² Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð—ÐŸ Ð¼ÐµÐ½ÑŒÑˆÐµ 2000.
 select e.employee_name, monthly_salary
 from employee_salary es 
 join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
 where s.monthly_salary > 2000
 
---3. Âûâåñòè âñå çàðïëàòíûå ïîçèöèè, íî ðàáîòíèê ïî íèì íå íàçíà÷åí. (ÇÏ åñòü, íî íå ïîíÿòíî êòî å¸ ïîëó÷àåò.)
+--3. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð½Ñ‹Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸, Ð½Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸Ðº Ð¿Ð¾ Ð½Ð¸Ð¼ Ð½Ðµ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½. (Ð—ÐŸ ÐµÑÑ‚ÑŒ, Ð½Ð¾ Ð½Ðµ Ð¿Ð¾Ð½ÑÑ‚Ð½Ð¾ ÐºÑ‚Ð¾ ÐµÑ‘ Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚.)
 select e.employee_name, monthly_salary
 from employee_salary es 
 full join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
 where es.employee_id > 70
 
--- 4. Âûâåñòè âñå çàðïëàòíûå ïîçèöèè  ìåíüøå 2000 íî ðàáîòíèê ïî íèì íå íàçíà÷åí. (ÇÏ åñòü, íî íå ïîíÿòíî êòî å¸ ïîëó÷àåò.)
+-- 4. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð½Ñ‹Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸  Ð¼ÐµÐ½ÑŒÑˆÐµ 2000 Ð½Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸Ðº Ð¿Ð¾ Ð½Ð¸Ð¼ Ð½Ðµ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½. (Ð—ÐŸ ÐµÑÑ‚ÑŒ, Ð½Ð¾ Ð½Ðµ Ð¿Ð¾Ð½ÑÑ‚Ð½Ð¾ ÐºÑ‚Ð¾ ÐµÑ‘ Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚.)
 select e.employee_name, monthly_salary
 from employee_salary es 
 full join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
 where es.employee_id > 70 and s.monthly_salary < 2000
 
---5. Íàéòè âñåõ ðàáîòíèêîâ êîìó íå íà÷èñëåíà ÇÏ.
+-- 5. ÐÐ°Ð¹Ñ‚Ð¸ Ð²ÑÐµÑ… Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ¾Ð² ÐºÐ¾Ð¼Ñƒ Ð½Ðµ Ð½Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ð° Ð—ÐŸ.
 select e.employee_name, monthly_salary
 from employee_salary es 
 join employees e on es.employee_id = e.id
 full join salary s on es.salary_id = s.id 
 where s.monthly_salary is null
 
--- 6. Âûâåñòè âñåõ ðàáîòíèêîâ ñ íàçâàíèÿìè èõ äîëæíîñòè.
+-- 6.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð²ÑÐµÑ… Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ¾Ð² Ñ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÑÐ¼Ð¸ Ð¸Ñ… Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚Ð¸.
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 
---7. Âûâåñòè èìåíà è äîëæíîñòü òîëüêî Java ðàçðàáîò÷èêîâ.
+--7. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Java Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð².
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Java %'
 
---8. Âûâåñòè èìåíà è äîëæíîñòü òîëüêî Python ðàçðàáîò÷èêîâ.
+--8. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Python Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð².
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Python%'
 
---9. Âûâåñòè èìåíà è äîëæíîñòü âñåõ QA èíæåíåðîâ.
+--9.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ð²ÑÐµÑ… QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð².
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
---10. Âûâåñòè èìåíà è äîëæíîñòü ðó÷íûõ QA èíæåíåðîâ.
+--10. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ñ€ÑƒÑ‡Ð½Ñ‹Ñ… QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð².
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Manual QA%'
 
---11. Âûâåñòè èìåíà è äîëæíîñòü àâòîìàòèçàòîðîâ QA
+--11. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð¾Ð² QA
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Automation%'
 
---12. Âûâåñòè èìåíà è çàðïëàòû Junior ñïåöèàëèñòîâ
+--12. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Junior ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð²
 select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -82,7 +82,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior%'
 
---13. Âûâåñòè èìåíà è çàðïëàòû Middle ñïåöèàëèñòîâ
+--13. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Middle ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð²
 select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -91,7 +91,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Middle%'
 
---14. Âûâåñòè èìåíà è çàðïëàòû Senior ñïåöèàëèñòîâ
+--14. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Senior ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð²
 select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -100,7 +100,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Senior%'
 
---15. Âûâåñòè çàðïëàòû Java ðàçðàáîò÷èêîâ
+--15. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Java Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -109,7 +109,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Java %'
 
---16. Âûâåñòè çàðïëàòû Python ðàçðàáîò÷èêîâ
+--16. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Python Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -118,7 +118,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Python%'
 
---17. Âûâåñòè èìåíà è çàðïëàòû Junior Python ðàçðàáîò÷èêîâ
+--17. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Junior Python Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -127,7 +127,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior Python%'
 
--- 18. Âûâåñòè èìåíà è çàðïëàòû Middle JS ðàçðàáîò÷èêîâ
+-- 18. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Middle JS Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -136,7 +136,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Middle JavaScript%'
 
--- 19. Âûâåñòè èìåíà è çàðïëàòû Senior Java ðàçðàáîò÷èêîâ
+-- 19. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð° Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Senior Java Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select e.employee_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
@@ -145,7 +145,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Senior Java %'
 
---20. Âûâåñòè çàðïëàòû Junior QA èíæåíåðîâ
+--20. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Junior QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð²
 select s.monthly_salary, r.role_name 
 from employee_salary es
 join roles_employee re  on  es.employee_id = re.employee_id 
@@ -153,7 +153,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
---21. Âûâåñòè ñðåäíþþ çàðïëàòó âñåõ Junior ñïåöèàëèñòîâ
+--21. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÑ€ÐµÐ´Ð½ÑŽÑŽ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ Ð²ÑÐµÑ… Junior ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð²
 select AVG(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -161,7 +161,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior%'
 
---22. Âûâåñòè ñóììó çàðïëàò JS ðàçðàáîò÷èêîâ
+--22.  Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÑƒÐ¼Ð¼Ñƒ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚ JS Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select sum(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -169,7 +169,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%JavaScript%'
 
---23. Âûâåñòè ìèíèìàëüíóþ ÇÏ QA èíæåíåðîâ
+--23. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð—ÐŸ QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð²
 select min(s.monthly_salary)
 from employee_salary es 
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -177,7 +177,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
--- 24. Âûâåñòè ìàêñèìàëüíóþ ÇÏ QA èíæåíåðîâ
+-- 24.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð—ÐŸ QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð²
 select max(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -185,7 +185,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
--- 25. Âûâåñòè êîëè÷åñòâî QA èíæåíåðîâ
+-- 25. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ QA Ð¸Ð½Ð¶ÐµÐ½ÐµÑ€Ð¾Ð²
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -193,7 +193,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
---26. Âûâåñòè êîëè÷åñòâî Middle ñïåöèàëèñòîâ.
+--26. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Middle ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð².
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -201,7 +201,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like 'Middle%'
 
---27. Âûâåñòè êîëè÷åñòâî ðàçðàáîò÷èêîâ
+--27. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð²
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -209,7 +209,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%developer%'
 
---28. Âûâåñòè ôîíä (ñóììó) çàðïëàòû ðàçðàáîò÷èêîâ.
+--28. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ñ„Ð¾Ð½Ð´ (ÑÑƒÐ¼Ð¼Ñƒ) Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñ‹ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð².
 select sum(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
@@ -217,7 +217,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 where r.role_name like '%developer%'
 
---29. Âûâåñòè èìåíà, äîëæíîñòè è ÇÏ âñåõ ñïåöèàëèñòîâ ïî âîçðàñòàíèþ
+--29. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð°, Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¸ Ð—ÐŸ Ð²ÑÐµÑ… ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
@@ -226,7 +226,7 @@ join salary s on s.id = es.employee_id
 join roles r on re.role_id = r.id 
 order by s.monthly_salary 
 
---30. Âûâåñòè èìåíà, äîëæíîñòè è ÇÏ âñåõ ñïåöèàëèñòîâ ïî âîçðàñòàíèþ ó ñïåöèàëèñòîâ ó êîòîðûõ ÇÏ îò 1700 äî 2300
+--30.  Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð°, Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¸ Ð—ÐŸ Ð²ÑÐµÑ… ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ñƒ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð—ÐŸ Ð¾Ñ‚ 1700 Ð´Ð¾ 2300
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
@@ -236,7 +236,7 @@ join roles r on re.role_id = r.id
 where s.monthly_salary >= 1700 and s.monthly_salary <= 2300
 order by s.monthly_salary
 
--- 31. Âûâåñòè èìåíà, äîëæíîñòè è ÇÏ âñåõ ñïåöèàëèñòîâ ïî âîçðàñòàíèþ ó ñïåöèàëèñòîâ ó êîòîðûõ ÇÏ ìåíüøå 2300
+-- 31. Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð°, Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¸ Ð—ÐŸ Ð²ÑÐµÑ… ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ñƒ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð—ÐŸ Ð¼ÐµÐ½ÑŒÑˆÐµ 2300
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
@@ -246,7 +246,7 @@ join roles r on re.role_id = r.id
 where s.monthly_salary < 2300
 order by s.monthly_salary
 
--- 32. Âûâåñòè èìåíà, äîëæíîñòè è ÇÏ âñåõ ñïåöèàëèñòîâ ïî âîçðàñòàíèþ ó ñïåöèàëèñòîâ ó êîòîðûõ ÇÏ ðàâíà 1100, 1500, 2000
+-- 32.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼ÐµÐ½Ð°, Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¸ Ð—ÐŸ Ð²ÑÐµÑ… ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ñƒ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð¾Ð² Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð—ÐŸ Ñ€Ð°Ð²Ð½Ð° 1100, 1500, 2000
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
