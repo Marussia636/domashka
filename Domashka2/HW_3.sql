@@ -4,35 +4,35 @@ from employee_salary es
 join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
 
--- 2. Вывести всех работников у которых ЗП меньше 2000.
+--2. Вывести всех работников у которых ЗП меньше 2000.
 select e.employee_name, monthly_salary
 from employee_salary es 
 join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
-where s.monthly_salary > 2000
+where s.monthly_salary < 2000
 
 --3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 select e.employee_name, monthly_salary
 from employee_salary es 
 full join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
-where es.employee_id > 70
+where e.employee_name is null
 
 -- 4. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 select e.employee_name, monthly_salary
 from employee_salary es 
 full join employees e on es.employee_id = e.id
 join salary s on es.salary_id = s.id 
-where es.employee_id > 70 and s.monthly_salary < 2000
+where e.employee_name is null and s.monthly_salary < 2000
 
--- 5. Найти всех работников кому не начислена ЗП.
+--5. Найти всех работников кому не начислена ЗП.
 select e.employee_name, monthly_salary
 from employee_salary es 
-join employees e on es.employee_id = e.id
+full join employees e on es.employee_id = e.id
 full join salary s on es.salary_id = s.id 
 where s.monthly_salary is null
 
--- 6.Вывести всех работников с названиями их должности.
+-- 6. Вывести всех работников с названиями их должности.
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -52,7 +52,7 @@ join employees e on re.employee_id = e.id
 join roles r on re.role_id = r.id 
 where r.role_name like '%Python%'
 
---9.Вывести имена и должность всех QA инженеров.
+--9. Вывести имена и должность всех QA инженеров.
 select e.employee_name, role_name
 from roles_employee re 
 join employees e on re.employee_id = e.id 
@@ -78,7 +78,7 @@ select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior%'
 
@@ -87,7 +87,7 @@ select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Middle%'
 
@@ -96,7 +96,7 @@ select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Senior%'
 
@@ -105,7 +105,7 @@ select s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Java %'
 
@@ -114,7 +114,7 @@ select s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Python%'
 
@@ -123,7 +123,7 @@ select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior Python%'
 
@@ -132,7 +132,7 @@ select e.employee_name, s.monthly_salary
 from roles_employee re 
 join employees e on re.employee_id = e.id 
 join employee_salary es on e.id = es.employee_id
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Middle JavaScript%'
 
@@ -141,7 +141,7 @@ select e.employee_name, s.monthly_salary
 from employee_salary es
 join employees e on es.employee_id = e.id 
 join roles_employee re  on e.id = re.employee_id 
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Senior Java %'
 
@@ -149,23 +149,23 @@ where r.role_name like '%Senior Java %'
 select s.monthly_salary, r.role_name 
 from employee_salary es
 join roles_employee re  on  es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
-where r.role_name like '%QA%'
+where r.role_name like '%Junior%QA%'
 
 --21. Вывести среднюю зарплату всех Junior специалистов
 select AVG(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%Junior%'
 
---22.  Вывести сумму зарплат JS разработчиков
+--22. Вывести сумму зарплат JS разработчиков
 select sum(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%JavaScript%'
 
@@ -173,15 +173,15 @@ where r.role_name like '%JavaScript%'
 select min(s.monthly_salary)
 from employee_salary es 
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
--- 24.Вывести максимальную ЗП QA инженеров
+-- 24. Вывести максимальную ЗП QA инженеров
 select max(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
@@ -189,7 +189,7 @@ where r.role_name like '%QA%'
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%QA%'
 
@@ -197,7 +197,7 @@ where r.role_name like '%QA%'
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like 'Middle%'
 
@@ -205,7 +205,7 @@ where r.role_name like 'Middle%'
 select count(r.role_name)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%developer%'
 
@@ -213,7 +213,7 @@ where r.role_name like '%developer%'
 select sum(s.monthly_salary)
 from employee_salary es
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+full join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where r.role_name like '%developer%'
 
@@ -222,11 +222,11 @@ select e.employee_name, r.role_name, s.monthly_salary
 from employee_salary es
 join employees e on es.employee_id = e.id 
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 order by s.monthly_salary 
 
---30.  Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП от 1700 до 2300
+--30. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП от 1700 до 2300
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
@@ -246,16 +246,15 @@ join roles r on re.role_id = r.id
 where s.monthly_salary < 2300
 order by s.monthly_salary
 
--- 32.Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП равна 1100, 1500, 2000
+-- 32. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП равна 1100, 1500, 2000
 select e.employee_name, r.role_name, s.monthly_salary 
 from employee_salary es
 join employees e on es.employee_id = e.id 
 join roles_employee re  on es.employee_id = re.employee_id 
-join salary s on s.id = es.employee_id 
+join salary s on s.id = es.salary_id 
 join roles r on re.role_id = r.id 
 where s.monthly_salary = 1100 or s.monthly_salary =1500 or s.monthly_salary =2000
 order by s.monthly_salary
-
 
 
 
