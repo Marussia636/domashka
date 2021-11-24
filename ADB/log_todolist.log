@@ -1,0 +1,181 @@
+(standard input):76:11-24 15:43:18.774  2348  3541 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.todolist/.MainActivity bnds=[643,1110][849,1408]} from uid 10086
+(standard input):77:11-24 15:43:18.814  2348  3541 I ActivityManager: Start proc 8286:com.android.todolist/u0a225 for activity com.android.todolist/.MainActivity
+(standard input):78:11-24 15:43:19.391  2348  2922 I WindowManager: Relayout Window{a4c7233 u0 com.android.todolist/com.android.todolist.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+(standard input):1433:11-24 16:32:25.775  2348  2368 I ActivityManager: Force stopping com.android.todolist appid=10225 user=-1: installPackageLI
+(standard input):1434:11-24 16:32:25.775  2348  2383 W PackageManager: Attempt to re-install com.android.todolist without first uninstalling.
+(standard input):1435:11-24 16:32:25.775  2348  2368 I ActivityManager: Killing 8286:com.android.todolist/u0a225 (adj 0): stop com.android.todolist
+(standard input):1437:11-24 16:32:25.780  2348  2368 I ActivityManager:   Force finishing activity ActivityRecord{2b87caf u0 com.android.todolist/.MainActivity t521}
+(standard input):1438:11-24 16:32:25.784  2348  2368 I ActivityManager:   Force finishing activity ActivityRecord{2b87caf u0 com.android.todolist/.MainActivity t521 f}
+(standard input):1439:11-24 16:32:25.785  2348  2368 W ActivityManager: Duplicate finish request for ActivityRecord{2b87caf u0 com.android.todolist/.MainActivity t521 f}
+(standard input):1483:11-24 16:32:51.903  2348  5027 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.todolist/.MainActivity bnds=[643,1110][849,1408]} from uid 10086
+(standard input):1484:11-24 16:32:51.952  2348  3506 I ActivityManager: Start proc 9778:com.android.todolist/u0a225 for activity com.android.todolist/.MainActivity
+(standard input):1485:11-24 16:32:52.477  2348  5023 I WindowManager: Relayout Window{9006109 u0 com.android.todolist/com.android.todolist.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+(standard input):2012:11-24 16:45:04.667  2348  2615 I WindowManager: Relayout Window{9006109 u0 com.android.todolist/com.android.todolist.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+(standard input):2132:11-24 16:48:20.971  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2153:11-24 16:48:22.972  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2184:11-24 16:48:24.975  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2197:11-24 16:48:26.978  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2211:11-24 16:48:28.980  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2227:11-24 16:48:30.982  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2244:11-24 16:48:32.984  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2261:11-24 16:48:34.992  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2273:11-24 16:48:36.994  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2292:11-24 16:48:39.003  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2307:11-24 16:48:41.009  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2322:11-24 16:48:43.011  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2337:11-24 16:48:45.013  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2355:11-24 16:48:47.014  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2397:11-24 16:48:49.017  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2410:11-24 16:48:51.019  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2427:11-24 16:48:53.021  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2442:11-24 16:48:55.029  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2453:11-24 16:48:57.031  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2473:11-24 16:48:59.033  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2489:11-24 16:49:01.035  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2505:11-24 16:49:03.037  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2519:11-24 16:49:05.039  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2534:11-24 16:49:07.045  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2547:11-24 16:49:09.047  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2561:11-24 16:49:11.055  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2582:11-24 16:49:13.057  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2596:11-24 16:49:15.059  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2611:11-24 16:49:17.061  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2627:11-24 16:49:19.062  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2642:11-24 16:49:21.064  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2661:11-24 16:49:23.071  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2673:11-24 16:49:25.073  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2686:11-24 16:49:27.075  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2703:11-24 16:49:29.077  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2718:11-24 16:49:31.079  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2735:11-24 16:49:33.081  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2750:11-24 16:49:35.082  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2766:11-24 16:49:37.084  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2781:11-24 16:49:39.086  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2794:11-24 16:49:41.088  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2809:11-24 16:49:43.092  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2827:11-24 16:49:45.095  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2842:11-24 16:49:47.097  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2856:11-24 16:49:49.099  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2869:11-24 16:49:51.101  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2900:11-24 16:49:53.103  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2915:11-24 16:49:55.107  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2928:11-24 16:49:57.109  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2944:11-24 16:49:59.115  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2962:11-24 16:50:01.117  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2978:11-24 16:50:03.121  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):2995:11-24 16:50:05.123  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3025:11-24 16:50:07.129  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3038:11-24 16:50:09.132  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3052:11-24 16:50:11.135  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3076:11-24 16:50:13.138  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3089:11-24 16:50:15.140  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3104:11-24 16:50:17.142  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3120:11-24 16:50:19.144  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3131:11-24 16:50:21.146  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3149:11-24 16:50:23.148  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3161:11-24 16:50:25.150  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3174:11-24 16:50:27.152  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3188:11-24 16:50:29.154  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3202:11-24 16:50:31.156  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3219:11-24 16:50:33.158  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3234:11-24 16:50:35.160  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3246:11-24 16:50:37.162  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3261:11-24 16:50:39.164  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3279:11-24 16:50:41.167  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3298:11-24 16:50:43.170  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3311:11-24 16:50:45.173  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3328:11-24 16:50:47.176  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3349:11-24 16:50:49.179  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3363:11-24 16:50:51.181  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3382:11-24 16:50:53.183  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3397:11-24 16:50:55.185  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3410:11-24 16:50:57.187  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3426:11-24 16:50:59.189  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3443:11-24 16:51:01.191  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3457:11-24 16:51:03.193  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3471:11-24 16:51:05.195  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3485:11-24 16:51:07.196  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3503:11-24 16:51:09.199  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3517:11-24 16:51:11.201  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3530:11-24 16:51:12.646 21275 21275 I ADB_SERVICES: service_to_fd shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS="''"; exec logcat 'todolist'
+(standard input):3540:11-24 16:51:13.203  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3556:11-24 16:51:15.205  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3572:11-24 16:51:17.207  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3587:11-24 16:51:19.209  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3601:11-24 16:51:21.211  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3621:11-24 16:51:23.213  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3634:11-24 16:51:25.215  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3653:11-24 16:51:27.218  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3670:11-24 16:51:29.220  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3683:11-24 16:51:31.222  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3701:11-24 16:51:33.224  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3714:11-24 16:51:35.226  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3725:11-24 16:51:37.228  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3741:11-24 16:51:39.231  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3755:11-24 16:51:41.232  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3774:11-24 16:51:43.234  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3791:11-24 16:51:45.236  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3807:11-24 16:51:47.238  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3822:11-24 16:51:49.240  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3836:11-24 16:51:51.242  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3855:11-24 16:51:53.244  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3868:11-24 16:51:55.245  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3880:11-24 16:51:57.247  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3896:11-24 16:51:59.250  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3912:11-24 16:52:01.252  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3928:11-24 16:52:03.254  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3940:11-24 16:52:05.256  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3953:11-24 16:52:07.258  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3967:11-24 16:52:09.260  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):3981:11-24 16:52:11.262  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):4001:11-24 16:52:13.264  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):4016:11-24 16:52:15.266  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):4030:11-24 16:52:17.268  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):4068:11-24 16:52:18.643   436   436 I SurfaceFlinger: screenshot (com.android.todolist/com.android.todolist.MainActivity#0)
+(standard input):4084:11-24 16:52:19.181   436   436 I SurfaceFlinger: screenshot (com.android.todolist/com.android.todolist.MainActivity#0)
+(standard input):4105:11-24 16:52:19.271  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):4154:11-24 16:52:23.648   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x732497c000,id:95,api:1,p:9778,c:436) disconnect(P): api 1
+(standard input):4155:11-24 16:52:23.648   436  1441 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x732497c000,id:95,api:1,p:-1,c:436) getReleasedBuffers: returning mask 0xffffffffffffffff
+(standard input):4156:11-24 16:52:23.664   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x732497c000,id:95,api:1,p:-1,c:-1) disconnect(C)
+(standard input):4157:11-24 16:52:23.682   436  1441 I BufferQueue: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x732497c000,id:95,api:1,p:-1,c:-1) ~BufferQueueCore
+(standard input):4436:11-24 16:53:16.611 21275 21275 I ADB_SERVICES: service_to_fd shell,v2,TERM=xterm-256color,raw:logcat | grep -rnw todolist
+(standard input):5504:11-24 16:55:52.371 21275 21275 I ADB_SERVICES: service_to_fd shell,v2,raw:logcat | grep -rnw todolist
+(standard input):6407:11-24 16:58:55.383  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):6536:11-24 16:58:57.386  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):6570:11-24 16:58:58.950   426   477 I vendor.mediatek.hardware.power@1.1-impl: notifyAppState pack:com.android.todolist, act:com.android.todolist.MainActivity, pid:9778, state:1
+(standard input):6584:11-24 16:58:59.013  2348  5937 I WindowManager: Relayout Window{9006109 u0 com.android.todolist/com.android.todolist.MainActivity}: oldVis=4 newVis=0 focusMayChange = true
+(standard input):6588:11-24 16:58:59.015   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:0,p:-1,c:436) setConsumerName: com.android.todolist/com.android.todolist.MainActivity#0
+(standard input):6590:11-24 16:58:59.015   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:0,p:-1,c:436) setDefaultBufferSize: width=1080 height=1920
+(standard input):6591:11-24 16:58:59.023   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) connect(P): api=1 producer=(9778:com.android.todolist) producerControlledByApp=true
+(standard input):6597:11-24 16:58:59.146  2348  2375 I Timeline: Timeline: Activity_windows_visible id: ActivityRecord{cddafe5 u0 com.android.todolist/.MainActivity t522} time:21663094 diff:197 start:warm|top-activity batt:53|2 mw:off|1 mem:2117364|0|48|2|15 cpu:[1638000, 1638000, 1638000, 1638000, 2340000, 2340000, 2340000, 2340000]
+(standard input):6668:11-24 16:58:59.389  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):6727:11-24 16:59:00.277   436   540 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) queueBuffer: fps=1.65 dur=1212.77 max=878.87 min=333.90
+(standard input):6752:11-24 16:59:00.573   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:0,p:-1,c:436) setConsumerName: com.android.todolist/com.android.todolist.MainActivity#1
+(standard input):6754:11-24 16:59:00.573   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:0,p:-1,c:436) setDefaultBufferSize: width=1218 height=844
+(standard input):6756:11-24 16:59:00.581   436  1794 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) connect(P): api=1 producer=(9778:com.android.todolist) producerControlledByApp=true
+(standard input):6773:11-24 16:59:00.790  2348  2375 I WindowManager: Losing delayed focus: Window{9006109 u0 com.android.todolist/com.android.todolist.MainActivity}
+(standard input):6841:11-24 16:59:01.287   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) queueBuffer: fps=32.67 dur=1010.02 max=341.63 min=7.85
+(standard input):6855:11-24 16:59:01.391  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):6963:11-24 16:59:02.052   436   539 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=3.14 dur=1273.03 max=511.83 min=39.70
+(standard input):7072:11-24 16:59:03.255   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) queueBuffer: fps=6.10 dur=1967.56 max=1785.90 min=15.79
+(standard input):7074:11-24 16:59:03.277   436   540 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=16.32 dur=1225.59 max=598.28 min=9.05
+(standard input):7086:11-24 16:59:03.393  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):7110:11-24 16:59:04.343   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=3.75 dur=1065.87 max=495.34 min=9.48
+(standard input):7133:11-24 16:59:05.394  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):7139:11-24 16:59:05.535   436   540 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=3.36 dur=1191.99 max=512.60 min=159.16
+(standard input):7170:11-24 16:59:06.580   436  1794 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=6.70 dur=1045.33 max=317.19 min=15.71
+(standard input):7181:11-24 16:59:07.395  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):7182:11-24 16:59:07.750   436  1794 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) queueBuffer: fps=3.42 dur=1169.63 max=503.18 min=11.65
+(standard input):7189:11-24 16:59:07.932   436  1794 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:9778,c:436) disconnect(P): api 1
+(standard input):7190:11-24 16:59:07.932   436  1794 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:-1,c:436) getReleasedBuffers: returning mask 0xffffffffffffffff
+(standard input):7196:11-24 16:59:08.019   436  1441 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) queueBuffer: fps=0.21 dur=4764.18 max=4764.18 min=4764.18
+(standard input):7203:11-24 16:59:08.161   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:-1,c:-1) disconnect(C)
+(standard input):7204:11-24 16:59:08.163   436   436 I BufferQueue: [com.android.todolist/com.android.todolist.MainActivity#1](this:0x7327be2800,id:100,api:1,p:-1,c:-1) ~BufferQueueCore
+(standard input):7218:11-24 16:59:09.396  1646  1655 I GasService: GAS loop :com.android.todolist, pid:9778.
+(standard input):7219:11-24 16:59:09.842   436   540 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) queueBuffer: fps=7.13 dur=1823.33 max=1512.70 min=4.68
+(standard input):7239:11-24 16:59:10.062   436   436 I SurfaceFlinger: screenshot (com.android.todolist/com.android.todolist.MainActivity#0)
+(standard input):7256:11-24 16:59:10.194   426   477 I vendor.mediatek.hardware.power@1.1-impl: notifyAppState pack:com.android.todolist, act:com.android.todolist.MainActivity, pid:9778, state:1
+(standard input):7261:11-24 16:59:10.318   436   540 I BufferQueueProducer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:9778,c:436) disconnect(P): api 1
+(standard input):7262:11-24 16:59:10.318   436   540 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:-1,c:436) getReleasedBuffers: returning mask 0xffffffffffffffff
+(standard input):7264:11-24 16:59:10.349   436   436 I BufferQueueConsumer: [com.android.todolist/com.android.todolist.MainActivity#0](this:0x7318c14000,id:99,api:1,p:-1,c:-1) disconnect(C)
+(standard input):7265:11-24 16:59:10.350   436
